@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1230px) {
+    header{
+        height: 400px;
+    }
+    .header-image{
+        width: 500px;
+      }
+    .left-section {
+        font-size: 20px;
+      } 
+
+    .faq-content{
+        margin: 20px;
+    }
+    .faq-image{
+       display: none; 
+    }
+    .blog-cards{
+        flex-direction: column;
+    }
+}
+
+
+
+  @media only screen and (max-width: 940px) {
+    .menu{
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .header-image{
+        display: none;
+    }
+
+
+    .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .blog-content h3{
+        font-size: 15px;
+    }
+    .blog-card{
+        width: 380px;
+    }
+
+    .blog-image{
+        display: none;
+    }
+    .api-section {
+        max-width: 1400px;
+        margin: 3% 1%;
+    }
+    .company-items{
+        font-size: 15px;
+
+    }
+    .download-content h1{
+        font-size: 25px;
+    }
+
+    main {
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .download-email input{
+        width: 200px;
+    }
+
+    .download-email button{
+        font-size: 15px;
+    }
+    .list{
+        gap: 1px;
+    }
+
+    .list-items{
+        font-size: 15px;
+        border: none;
+    }
+}
