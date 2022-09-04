@@ -305,10 +305,18 @@ main{
   margin: 0;
 }
 
+.footer-logo{
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+
+}
 .logos-list{
   display: flex;
   gap: 5px;
   list-style: none;
+  justify-content: center;
 }
 
 .list-items{
