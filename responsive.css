@@ -18,6 +18,9 @@
     .blog-cards{
         flex-direction: column;
     }
+    .cards:last-child::after{
+        display: none;
+    }
 }
 
 
@@ -46,16 +49,15 @@
 
 
 @media only screen and (max-width: 700px) {
-    .blog-content h3{
-        font-size: 15px;
-    }
+
     .blog-card{
         width: 380px;
     }
 
-    .blog-image{
-        display: none;
-    }
+    .blog-content{
+        text-align: center;
+      }
+      
     .api-section {
         max-width: 1400px;
         margin: 3% 1%;
@@ -73,8 +75,36 @@
         display: flex;
         flex-direction: column;
     }
+
+    .blog-image{
+        display: none;
+    }
+
+
+    .blog-card{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+        box-shadow: 0 0 10px 6px rgb(0 0 0 / 4%);
+        height: 288px;
+        width: 100%;
+    }
+
+    .download-section{
+        flex-direction: column;
+    }
+    .download-email{
+        width: 80%;
+    }
+
     .download-email input{
-        width: 200px;
+        width: 70%;
     }
 
     .download-email button{
@@ -88,4 +118,17 @@
         font-size: 15px;
         border: none;
     }
+    .list{
+       justify-content: center;
+       margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .download-email input{
+        width: 55%;
+    }
+
 }

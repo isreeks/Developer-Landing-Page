@@ -27,6 +27,8 @@ nav{
 }
 .icon{
   display: none;
+  font-size: 30px;
+  color: #fff;
 }
 
 .nav-item{
@@ -111,8 +113,31 @@ main{
     flex-wrap: wrap;
   }
 
+.cards:last-child::after {
+    content: ">";
+    display: flex;
+    background-color: #4617fe;
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
 .card{
   padding: 40px 20px;
+}
+
+.card:hover{
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card-active{
@@ -122,21 +147,6 @@ main{
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-/* .cards:last-child::after {
-  content: ">";
-  display: flex;
-  background-color: #4617fe;
-  color: #FFFFFF;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  position: absolute;
-  right: 300px;
-  top: 843px;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-} */
 
 .card-logo{
   width: 64px;
@@ -151,22 +161,26 @@ main{
   margin-top: 1%;
   position: relative;
   display: flex;
-  
   gap: 20px;
 }
 
-.blog-content{
-  padding: 20px;
-}
 .blog-content h6{
-  font-size: 18px;
+  font-size: 20px;
 }
 .blog-content small{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .blog-content h3{
-  font-size: 26px;
+  font-size: 25px;
+}
+.blog-content{
+  padding: 10px;
+}
+
+
+.blog-image img {
+  width: 100%;
 }
 
 .blog-card{
@@ -184,8 +198,19 @@ main{
   width: 600px;
 }
 
+.writer{
+  display: flex;
+  position: absolute;
+  top: 240px;
+}
+.blog-bottom img{
+ padding: 3px;
+ background: #fff;
+ border-radius: 100px;
+}
+
 .blog-author{
-  margin: auto 10px;
+  margin: 6px 8px;
 
 }
 
@@ -270,13 +295,13 @@ main{
   flex-wrap: wrap;
   align-items: center;
   padding: 30px;
-
 }
 
 .list{
   display: flex;
   gap: 5px;
   list-style: none;
+  flex-wrap: wrap;
   margin: 0;
 }
 
